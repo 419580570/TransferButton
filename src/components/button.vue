@@ -13,7 +13,7 @@
       <el-table 
         :data='requestResult'
         v-loading="TransferResult"
-        element-loading-text="拼命加载中"
+        element-loading-text="正在批量转帐"
         element-loading-background="rgba(255, 255, 255, 0.7)">
         <el-table-column 
           label="转帐目标"
@@ -38,7 +38,7 @@
 
       <span slot="footer" class="dialog-footer">
         <span class="text-bottom" v-show="!TransferResult">合计转账成功：{{success}}
-          <el-divider direction="vertical"></el-divider>失败：{{total-success}}</span>
+          <el-divider direction="vertical"></el-divider>失败：{{fail}}</span>
         <el-button type="primary" @click="close">确 定</el-button>
       </span>
     </el-dialog>

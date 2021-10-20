@@ -11,7 +11,8 @@ Vue.use(TableColumn)
 Vue.use(Loading)
 Vue.use(Tag)
 Vue.use(Divider)
-Vue.use(Message)
+// Vue.use(Message)
+Vue.component(Message.name,Message)
 Vue.prototype.$message = Message
 
 Vue.config.productionTip = false
